@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Book Look</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/custom.css">
 	<link rel="stylesheet" type="text/css" href="./node_modules/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
 
-	<h1><u>Book Look</u> <i class="fa fa-eye" aria-hidden="true"></i></h1>
+	<!-- <h1><u>Book Look</u> <i class="fa fa-eye" aria-hidden="true"></i></h1> -->
+	<div class="books-container"></div>
 		<div class="container">
+		<div class="row">
 			<div class="col-md-3">
+			<h1>Book Look<i class="fa fa-eye" aria-hidden="true"></i></h1><hr>
 			<div class="srch-title">Search By ISBN</div>
-				<form class="navbar-form" role="search">
+				<form class="navbar-form">
 					<div class="input-group add-on">
-						<input class="form-control" placeholder="ISBN number" name="srch-term" type="text">
+						<input class="form-control" id="search-input" placeholder="ISBN number" type="text">
 							<div class="input-group-btn">
-								<button class="btn btn-default" type="submit">Search</button>
+								<button onclick="fetch()" class="btn btn-default" type="button">Search</button>
 							</div>
 						</div>
 					</form>
 				</div>
 			</div>
-	<!-- <button class="btn btn-danger hit-me">Hit Me!</button> -->
+			</div>
 	<script type="text/javascript" src="./node_modules/jquery/dist/jquery.js"></script>
 	<script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<script type="text/javascript" src="./node_modules/handlebars/dist/cjs/handlebars.js"></script>
+	<script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
